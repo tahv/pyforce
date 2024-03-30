@@ -96,7 +96,7 @@ print(client)
 Client(
     name='my-client', 
     host='5bb1735f73fc', 
-    owner='root', 
+    owner='foo', 
     root=PosixPath('/home/foo/my-client'), 
     stream='//my-depot/my-stream', 
     type=<ClientType.STANDARD: 'writeable'>, 
