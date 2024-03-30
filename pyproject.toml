@@ -26,7 +26,8 @@ classifiers = [
 ]
 
 [project.urls]
-Source = "https://github.com/tahv/pyforce"
+Github = "https://github.com/tahv/pyforce"
+Changelog = "https://github.com/tahv/pyforce/CHANGELOG.md"
 # Documentation = ""
 
 [project.optional-dependencies]
