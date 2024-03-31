@@ -3,8 +3,12 @@ name: Tests & Mypy
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "docs/**"
   pull_request:
     branches: [main]
+    paths-ignore:
+      - "docs/**"
 
 jobs:
   mypy:
@@ -84,4 +88,3 @@ jobs:
           python -Im coverage report --show-missing --skip-covered --skip-empty --format=markdown >> $GITHUB_STEP_SUMMARY
           # Report in console
           python -Im coverage report --show-missing --skip-covered --skip-empty
-
