@@ -42,7 +42,7 @@ doc = [
   "autodoc_pydantic",
   "enum_tools[sphinx]",
 ]
-dev = ["pyforce-p4[style,mypy,doc]"]
+dev = ["pyforce-p4[tests,style,mypy,doc]"]
 
 [tool.hatch.version]
 source = "vcs"
