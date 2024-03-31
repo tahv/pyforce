@@ -1,4 +1,4 @@
-name: Tests and type checking
+name: Tests & Mypy
 
 on:
   push:
@@ -9,8 +9,6 @@ on:
       - main
 
 # TODO: pages
-# TODO: build
-# TODO: publish
 
 jobs:
   mypy:
@@ -83,7 +81,7 @@ jobs:
         run: |
           python -Im pip install --upgrade pip
           python -Im pip install coverage
-      - name: Combine coverage and report
+      - name: Combine and report
         run: |
           python -Im coverage combine
           # Report in summary
