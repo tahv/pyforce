@@ -11,6 +11,8 @@ jobs:
   build:
     name: Build package
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.build.outputs.version }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,9 +24,12 @@ jobs:
       - name: Install requirements
         run: |
           python -Im pip install --upgrade pip
-          python -Im pip install build check-wheel-contents
+          python -Im pip install build check-wheel-contents hatch hatch-vcs
       - name: Build package
-        run: python -Im build
+        id: build
+        run: |
+          python -Im build
+          echo "version=$(python -m hatchling version)" | tee -a "$GITHUB_OUTPUT"
       - name: Check wheel content
         run: check-wheel-contents dist/*.whl
       - name: Print package contents summary
@@ -66,7 +71,7 @@ jobs:
     needs: [build]
     environment:
       name: publish-pypi
-      url: https://pypi.org/project/pyforce-p4/${{ github.ref_name }}
+      url: https://pypi.org/project/pyforce-p4/${{ needs.build.outputs.version }}
     permissions:
       id-token: write
     steps:
@@ -80,7 +85,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: [build]
-    environment: publish-test-pypi
+    environment:
+      name: publish-test-pypi
+      url: https://test.pypi.org/project/pyforce-p4/${{ needs.build.outputs.version }}
     permissions:
       id-token: write
     steps:
