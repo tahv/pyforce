@@ -25,6 +25,10 @@ uninstall      Remove development environment
 ## Running the tests
 
 The tests require a new `p4d` server running in the backgound.
-To simplify the development, tests are runned in a docker container generated from this [Dockerfile](Dockerfile).
+To simplify the development,
+tests are runned in a docker container
+generated from the [Dockerfile](https://github.com/tahv/pyforce/blob/main/Dockerfile)
+at the root of this repo.
 
-This target `make tests` target build the container and run the tests + coverage inside.
+The `make tests` target build the container and run the tests, with coverage, inside.
+

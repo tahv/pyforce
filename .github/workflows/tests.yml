@@ -2,13 +2,9 @@ name: Tests & Mypy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
-
-# TODO: pages
+    branches: [main]
 
 jobs:
   mypy:

@@ -28,7 +28,7 @@ classifiers = [
 [project.urls]
 Github = "https://github.com/tahv/pyforce"
 Changelog = "https://github.com/tahv/pyforce/blob/main/CHANGELOG.md"
-# Documentation = ""
+Documentation = "https://pyforce.readthedocs.io/en/latest"
 
 [project.optional-dependencies]
 tests = ["pytest", "coverage"]
