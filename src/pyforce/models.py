@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import pathlib
+import pathlib  # noqa: TCH003
 import shlex
 from dataclasses import dataclass
 from typing import Any, Iterable, List, Literal, Mapping, NamedTuple, Union, cast
