@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
+import pathlib
 import shlex
 from dataclasses import dataclass
-from pathlib import Path  # noqa: TCH003
 from typing import Any, Iterable, List, Literal, Mapping, NamedTuple, Union, cast
 
 from pydantic import (
@@ -186,7 +186,7 @@ class Client(PyforceModel):
     owner: str = Field(alias="Owner")
     """The name of the user who owns the workspace."""
 
-    root: Path = Field(alias="Root")
+    root: pathlib.Path = Field(alias="Root")
     """Workspace root directory on the local host
 
     All the file in `views` are relative to this directory.

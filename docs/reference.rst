@@ -107,6 +107,7 @@ Exceptions
 .. autoexception:: pyforce.AuthenticationError
 .. autoexception:: pyforce.ConnectionExpiredError
 .. autoexception:: pyforce.CommandExecutionError
+.. autoexception:: pyforce.ChangeUnknownError
 
 Other
 -----
@@ -119,3 +120,15 @@ Other
 
 .. autoenum:: pyforce.MarshalCode
    :members:
+
+.. autoenum:: pyforce.MessageLevel
+   :members:
+
+.. class:: pyforce.utils.PerforceDateTime
+
+   Alias of `datetime.datetime`
+
+.. class:: pyforce.utils.PerforceTimestamp
+
+   Alias of `datetime.datetime`
+

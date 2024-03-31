@@ -25,6 +25,7 @@ __all__ = [
     "Connection",
     "MessageSeverity",
     "MarshalCode",
+    "MessageLevel",
 ]
 
 log: Final = logging.getLogger("pyforce")

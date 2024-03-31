@@ -34,7 +34,7 @@ Changelog = "https://github.com/tahv/pyforce/blob/main/CHANGELOG.md"
 tests = ["pytest", "coverage"]
 style = ["ruff"]
 mypy = ["mypy", "pytest"]
-doc = [
+docs = [
   "sphinx",
   "sphinx-autobuild",
   "furo",
@@ -42,7 +42,7 @@ doc = [
   "autodoc_pydantic",
   "enum_tools[sphinx]",
 ]
-dev = ["pyforce-p4[tests,style,mypy,doc]"]
+dev = ["pyforce-p4[tests,style,mypy,docs]"]
 
 [tool.hatch.version]
 source = "vcs"

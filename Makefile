@@ -90,9 +90,9 @@ mypy: $(venv)
 build: $(venv)
 	$(python) -m build
 
-.PHONY: doc  ## Build documentation
-doc: $(venv)
-	$(python) -m sphinx -b html -a docs $(DOCS_BUILDDIR)
+.PHONY: docs  ## Build documentation
+docs: $(venv)
+	$(python) -m sphinx -W -n -b html -a docs $(DOCS_BUILDDIR)
 
 .PHONY: serve  ## Serve documentation at http://127.0.0.1:8000
 serve: $(venv)

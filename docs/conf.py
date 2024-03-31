@@ -3,6 +3,7 @@
 Documentation:
     https://www.sphinx-doc.org/en/master/usage/configuration.html
 """
+
 import importlib.metadata
 import sys
 from pathlib import Path
