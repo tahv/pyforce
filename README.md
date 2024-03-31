@@ -1,9 +1,11 @@
 # Pyforce
 
-[![License][license-badge]][pyforce-license]
-[![PyPi - Python Version][python-version-badge]][pyforce-pypi]
-[![PyPi - Version][version-badge]][pyforce-pypi]
+[![License - MIT][license-badge]][pyforce-license]
+[![PyPI - Python Version][python-version-badge]][pyforce-pypi]
+[![PyPI - Version][version-badge]][pyforce-pypi]
 [![Linter - Ruff][ruff-badge]][ruff-repo]
+[![Types - Mypy][mypy-badge]][mypy-repo]
+[![CI - Tests][pyforce-workflow-tests-badge]][pyforce-workflow-tests]
 
 Python wrapper for Perforce p4 command-line client.
 
@@ -113,16 +115,20 @@ See [documentation]() for more details.
 
 ## Contributing
 
-For guidance on setting up a development environment and contributing to `Pyforce`, 
+For guidance on setting up a development environment and contributing to pyforce,
 see the [Contributing](https://github.com/tahv/pyforce/blob/main/CONTRIBUTING.md) section.
 
 <!-- Links -->
 
-[license-badge]: https://img.shields.io/github/license/tahv/pyforce
+[license-badge]: https://img.shields.io/github/license/tahv/pyforce?label=License
 [ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json
-[version-badge]: https://img.shields.io/pypi/v/pyforce-p4?logo=pypi&logoColor=white
-[python-version-badge]: https://img.shields.io/pypi/pyversions/pyforce-p4?logo=python&logoColor=white
+[version-badge]: https://img.shields.io/pypi/v/pyforce-p4?logo=pypi&label=PyPI&logoColor=white
+[python-version-badge]: https://img.shields.io/pypi/pyversions/pyforce-p4?logo=python&label=Python&logoColor=white
+[mypy-badge]: https://img.shields.io/badge/Types-Mypy-blue.svg
+[pyforce-workflow-tests-badge]: https://github.com/tahv/pyforce/actions/workflows/tests.yml/badge.svg
 
 [pyforce-license]: https://github.com/tahv/pyforce/blob/main/LICENSE
 [ruff-repo]: https://github.com/astral-sh/ruff
 [pyforce-pypi]: https://pypi.org/project/pyforce-p4
+[mypy-repo]: https://github.com/python/mypy
+[pyforce-workflow-tests]: https://github.com/tahv/pyforce/actions/workflows/tests.yml
