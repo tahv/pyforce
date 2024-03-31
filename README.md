@@ -6,6 +6,7 @@
 [![Linter - Ruff][ruff-badge]][ruff-repo]
 [![Types - Mypy][mypy-badge]][mypy-repo]
 [![CI - Tests][pyforce-workflow-tests-badge]][pyforce-workflow-tests]
+[![Documentation Status][pyforce-docs-badge]][pyforce-documentation]
 
 Python wrapper for Perforce p4 command-line client.
 
@@ -73,12 +74,11 @@ FStat(
 """
 ```
 
-The goal of Pyforce is not to be exhaustive. 
-It focuses on the most common `p4` commands, 
-but can execute more complexe commands by using `pyforce.p4`.
+Pyforce has functions for the most common `p4` commands
+but can execute more complexe commands with `pyforce.p4`.
 
-For example, Pyforce does not have a function to create a new client workspace, 
-but it is possible to create one with `pyforce.p4`.
+For example, pyforce doesn't have a function to create a new client workspace,
+here is how to create one using `pyforce.p4`.
 
 ```python
 import pyforce
@@ -107,16 +107,14 @@ Client(
 """
 ```
 
-<!--
 ## Documentation
 
-See [documentation]() for more details.
--->
+See pyforce [documentation](https://pyforce.readthedocs.io/en/latest) for more details.
 
 ## Contributing
 
 For guidance on setting up a development environment and contributing to pyforce,
-see the [Contributing](https://github.com/tahv/pyforce/blob/main/CONTRIBUTING.md) section.
+see the [Contributing](https://pyforce.readthedocs.io/en/latest/contributing.html) section.
 
 <!-- Links -->
 
@@ -126,9 +124,11 @@ see the [Contributing](https://github.com/tahv/pyforce/blob/main/CONTRIBUTING.md
 [python-version-badge]: https://img.shields.io/pypi/pyversions/pyforce-p4?logo=python&label=Python&logoColor=white
 [mypy-badge]: https://img.shields.io/badge/Types-Mypy-blue.svg
 [pyforce-workflow-tests-badge]: https://github.com/tahv/pyforce/actions/workflows/tests.yml/badge.svg
+[pyforce-docs-badge]: https://readthedocs.org/projects/pyforce/badge/?version=latest
 
 [pyforce-license]: https://github.com/tahv/pyforce/blob/main/LICENSE
 [ruff-repo]: https://github.com/astral-sh/ruff
 [pyforce-pypi]: https://pypi.org/project/pyforce-p4
 [mypy-repo]: https://github.com/python/mypy
 [pyforce-workflow-tests]: https://github.com/tahv/pyforce/actions/workflows/tests.yml
+[pyforce-documentation]: https://pyforce.readthedocs.io/en/latest
