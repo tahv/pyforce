@@ -109,12 +109,12 @@ Client(
 
 ## Documentation
 
-See pyforce [documentation](https://pyforce.readthedocs.io/en/latest) for more details.
+See pyforce [documentation](https://pyforce.readthedocs.io/latest) for more details.
 
 ## Contributing
 
 For guidance on setting up a development environment and contributing to pyforce,
-see the [Contributing](https://pyforce.readthedocs.io/en/latest/contributing.html) section.
+see the [Contributing](https://pyforce.readthedocs.io/latest/contributing.html) section.
 
 <!-- Links -->
 
@@ -131,4 +131,4 @@ see the [Contributing](https://pyforce.readthedocs.io/en/latest/contributing.htm
 [pyforce-pypi]: https://pypi.org/project/pyforce-p4
 [mypy-repo]: https://github.com/python/mypy
 [pyforce-workflow-tests]: https://github.com/tahv/pyforce/actions/workflows/tests.yml
-[pyforce-documentation]: https://pyforce.readthedocs.io/en/latest
+[pyforce-documentation]: https://pyforce.readthedocs.io/latest
